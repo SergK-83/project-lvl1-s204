@@ -6,3 +6,8 @@
 
 ## install
 npm install -g brain-games-ks17
+
+## Games
+
+### Game: "Check for honesty"
+game-even
