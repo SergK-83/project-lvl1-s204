@@ -25,7 +25,7 @@ export default () => {
     const answer = (readlineSync.question('Your answer: ')).toLowerCase();
     const correctAnswer = findСorrectAnswer(questionValue);
 
-    if (checkEven(questionValue) !== answerToBool(answer)) return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${user}!`);
+    if (checkEven(questionValue) !== answerToBool(answer)) return console.log(`\n'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${user}!`);
 
     console.log('Correct! \n');
   }
