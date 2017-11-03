@@ -11,3 +11,6 @@ npm install -g brain-games-ks17
 
 ### Game: "Check for honesty"
 game-even
+
+### Game: "Calculator"
+game-calc

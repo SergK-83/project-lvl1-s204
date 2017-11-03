@@ -1,14 +1,15 @@
 import readlineSync from 'readline-sync';
 import { welcome, meetUser } from './index';
 
-const checkEven = num => (num % 2 === 0 ? true : false);
+const checkEven = num => num % 2 === 0;
 
 const answerToBool = (str) => {
   if (str === 'yes') return true;
   else if (str === 'no') return false;
+  return null;
 };
 
-const findСorrectAnswer = num => (num % 2 === 0 ? 'yes' : 'no');
+const findCorrectAnswer = num => (num % 2 === 0 ? 'yes' : 'no');
 
 export default () => {
   welcome();
@@ -23,7 +24,7 @@ export default () => {
     console.log(`Question: ${questionValue}`);
 
     const answer = (readlineSync.question('Your answer: ')).toLowerCase();
-    const correctAnswer = findСorrectAnswer(questionValue);
+    const correctAnswer = findCorrectAnswer(questionValue);
 
     if (checkEven(questionValue) !== answerToBool(answer)) return console.log(`\n'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${user}!`);
 
