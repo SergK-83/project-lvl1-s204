@@ -20,3 +20,6 @@ brain-gcd
 
 ### Game: "Balance"
 brain-balance
+
+### Game: "Arithmetic progression"
+brain-progression
