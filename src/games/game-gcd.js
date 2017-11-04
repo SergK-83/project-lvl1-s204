@@ -3,6 +3,7 @@ import { randomNumInt } from '../templates';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
+// Find the greatest common divisor of given numbers
 const findGcd = (a, b) => {
   let min = Math.min(a, b);
   let max = Math.max(a, b);

@@ -3,6 +3,7 @@ import { randomNumInt } from '../templates';
 
 const description = 'Balance the given number.';
 
+// Balance the given number
 const balanceNum = (arr) => {
   const elementsSum = arr.reduce((sum, current) => sum + current, 0);
   const balancedElem = (elementsSum - (elementsSum % arr.length)) / arr.length;

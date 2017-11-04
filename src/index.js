@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 export default (game, description) => {
   console.log('Welcome to the Brain Games! \n');
 
+  // description of the game
   if (description) console.log(`${description} \n`);
 
   const user = readlineSync.question('May I have your name?: ');
@@ -18,6 +19,7 @@ export default (game, description) => {
 
       const answer = (readlineSync.question('Your answer: ')).toLowerCase();
 
+      // check the answer
       if (answer === String(correctAnswer)) console.log('Correct! \n');
       else {
         console.log(`\n'${answer}' is wrong answer ;(. \nCorrect answer was '${correctAnswer}'. \n\nLet's try again, ${user}!`);

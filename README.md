@@ -8,6 +8,7 @@ training course https://ru.hexlet.io
 npm install -g brain-games-ks17
 
 ## Games
+commands for calling games
 
 ### Game: "Check for honesty"
 game-even
@@ -15,7 +16,7 @@ game-even
 ### Game: "Calculator"
 game-calc
 
-### Game: "Find the greatest common divisor of given numbers."
+### Game: "Greatest common divisor"
 brain-gcd
 
 ### Game: "Balance"
@@ -23,3 +24,6 @@ brain-balance
 
 ### Game: "Arithmetic progression"
 brain-progression
+
+### Game: "Simple number"
+brain-prime
