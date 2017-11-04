@@ -14,3 +14,6 @@ game-even
 
 ### Game: "Calculator"
 game-calc
+
+### Game:"Find the greatest common divisor of given numbers."
+brain-gcd

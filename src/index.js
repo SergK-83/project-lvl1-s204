@@ -18,7 +18,7 @@ export default (game, description) => {
 
       const answer = (readlineSync.question('Your answer: ')).toLowerCase();
 
-      if (answer === correctAnswer) console.log('Correct! \n');
+      if (answer === String(correctAnswer)) console.log('Correct! \n');
       else {
         console.log(`\n'${answer}' is wrong answer ;(. \nCorrect answer was '${correctAnswer}'. \n\nLet's try again, ${user}!`);
         return;
