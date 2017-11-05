@@ -1,5 +1,5 @@
 import play from '../index';
-import { randomNumInt } from '../templates';
+import { randomNumInt } from '../utils';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
