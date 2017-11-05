@@ -4,20 +4,15 @@ import { randomNumInt } from '../templates';
 const description = 'Find the greatest common divisor of given numbers.';
 
 // Find the greatest common divisor of given numbers
-const findGcd = (a, b) => {
-  let min = Math.min(a, b);
-  let max = Math.max(a, b);
+const findGcd = (numFirst, numSec) => {
+  let a = numFirst;
+  let b = numSec;
 
-  while (true) {
-    if (max % min === 0) return min;
-    else if ((max - min) > min) {
-      max -= min;
-    } else {
-      const spareVar = min;
-      min = max - min;
-      max = spareVar;
-    }
+  while (a !== 0 && b !== 0) {
+    if (a > b) a %= b;
+    else b %= a;
   }
+  return a + b;
 };
 
 const gameGcd = () => {
